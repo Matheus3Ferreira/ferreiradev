@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background: #1A1A1F;
+    background: linear-gradient(90deg, rgba(8,8,101,0.95) 0%, rgba(26,26,31,1) 5%, rgba(26,26,31,1) 95%, rgba(8,8,101,0.95) 100%);
+}
+
