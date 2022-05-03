@@ -1,0 +1,21 @@
+.portfolio-container {
+    padding-bottom: 65px;
+    > h1 {
+        margin-bottom: 50px;
+    }
+    .selected-project {
+        max-width: 700px;
+        > img {
+            max-width: 680px;
+        }
+        > h2 {
+            margin-bottom: 20px;
+        }
+        > p {
+            margin-bottom: 10px;
+        }
+        .buttons-project-container {
+            display: flex;
+        }
+    }
+}

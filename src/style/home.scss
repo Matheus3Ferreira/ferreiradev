@@ -1,0 +1,54 @@
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .profile {
+        width: 240px;
+        height: 240px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 650px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    > h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    > p {
+        margin-bottom: 30px;
+    }
+    > section {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        padding: 0 60px;
+        margin-bottom: 70px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+        .about-me {
+            width: 530px;
+            > p:first-child {
+                margin-bottom: 30px;
+            }
+        }
+        .rafiki-working{
+            text-align: center;
+            > img {
+                margin-top: -30px;
+                @media screen and (max-width: 900px) {
+                    width: 300px;
+                }
+            }
+            > a {
+                text-decoration: none;
+            }
+        }
+    }
+}

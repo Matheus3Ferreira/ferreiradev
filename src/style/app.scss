@@ -4,12 +4,33 @@
     border: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #FFF;
 }
 
-.App {
+html {
     width: 100vw;
     height: 100vh;
     background: #1A1A1F;
-    background: linear-gradient(90deg, rgba(8,8,101,0.95) 0%, rgba(26,26,31,1) 5%, rgba(26,26,31,1) 95%, rgba(8,8,101,0.95) 100%);
+
+    @media screen and (min-width: 650px) {
+        padding: 0 10px;
+        background: linear-gradient(90deg, rgba(8,8,101,1) -50%, rgba(26,26,31,1) 10%, rgba(26,26,31,1) 19%, rgba(25,25,36,1) 91%, rgba(8,8,101,1) 150%);
+    }
 }
 
+.App {
+    padding: 0 60px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+h2 {
+    font-weight: 400;
+}
