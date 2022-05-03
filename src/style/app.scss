@@ -7,10 +7,11 @@
     color: #FFF;
 }
 
-html {
+body {
     width: 100vw;
     height: 100vh;
     background: #1A1A1F;
+    overflow-x: hidden;
 
     @media screen and (min-width: 650px) {
         padding: 0 10px;
@@ -33,4 +34,27 @@ h1 {
 
 h2 {
     font-weight: 400;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2B2F3A;
+    padding: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+    border: 5px solid #2B2F3A;
+    
 }

@@ -9,8 +9,10 @@ import {faArrowRightToBracket} from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
     return (
+        <div>
+
+            <h1 className="title-portfolio">These are my projects</h1>
         <div className="portfolio-container">
-            <h1>These are my projects</h1>
             <div className="selected-project">
                 <img src={projectImg} alt="project screenshot" />
                 <h2>Project's title</h2>
@@ -22,8 +24,11 @@ function Portfolio() {
                 </div>
             </div>
             <div className="project-list">
-
+                <img src={projectImg} alt="" />
+                <img src={projectImg} alt="" />
+                <img src={projectImg} alt="" />
             </div>
+        </div>
         </div>
     )
 }
