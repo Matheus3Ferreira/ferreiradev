@@ -8,6 +8,9 @@ a {
         border: 1px solid #4444DC;
         display: flex;
         cursor: pointer;
+        @media screen and (max-width: 900px) {
+            margin-bottom: 20px;
+         }
         
         .btn-icon {
             background: #4444DC;

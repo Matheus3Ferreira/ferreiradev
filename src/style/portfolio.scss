@@ -5,11 +5,18 @@
     padding-bottom: 65px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        flex-direction: column;
+    }
 
     .selected-project {
         max-width: 700px;
         > img {
             max-width: 680px;
+            @media screen and (max-width: 900px) {
+                width: 80vw;
+            }
         }
         > h2 {
             margin-bottom: 20px;
@@ -19,6 +26,11 @@
         }
         .buttons-project-container {
             display: flex;
+            @media screen and (max-width: 900px) {
+               flex-direction: column;
+               width: 100vw;
+               align-items: center;
+            }
         }
     }
     .project-list {
@@ -27,6 +39,12 @@
         overflow-y: scroll;
         height: 500px;
         padding-right: 20px;
+        @media screen and (max-width: 900px) {
+            flex-direction: row;
+            overflow-y: hidden;
+            height: auto;
+            overflow-x: scroll;
+        }
 
         &::-webkit-scrollbar-track {
             border-radius: 10px;
@@ -35,8 +53,11 @@
         .btn-project {
             width: 200px;
             min-height: 150px;
-            margin-bottom: 25px;
+            margin: 0 0 25px 0;
             background: none;
+            @media screen and (max-width: 900px) {
+                margin: 0 10px 0 0;
+            }
             > img {
                 width: 200px;
                 min-height: 150px;

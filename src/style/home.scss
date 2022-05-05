@@ -34,6 +34,9 @@
         }
         .about-me {
             width: 530px;
+            @media screen and (max-width: 900px) {
+                width: auto;
+            }
             > p:first-child {
                 margin-bottom: 30px;
             }
