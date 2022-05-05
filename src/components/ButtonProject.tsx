@@ -1,15 +1,15 @@
 import { ReactNode } from 'react';
-import "../style/button-project.scss";
+import "../style/button-link-project.scss";
 
 
-interface ButtonProjectProps {
+interface ButtonLinkProjectProps {
     icon: ReactNode,
     link: string,
     text: string
 }
 
 
-function ButtonProject(props: ButtonProjectProps) {
+function ButtonProject(props: ButtonLinkProjectProps) {
     const { icon, link, text } = props;
     return (
         <a href={link}>
