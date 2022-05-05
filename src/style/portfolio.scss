@@ -32,12 +32,19 @@
             border-radius: 10px;
         }
 
-        > img {
+        .btn-project {
             width: 200px;
             min-height: 150px;
-            object-fit: cover;
             margin-bottom: 25px;
-
+            background: none;
+            > img {
+                width: 200px;
+                min-height: 150px;
+                object-fit: cover;
+            }
+        }
+        .selected {
+            border: 5px solid #4444DC;
         }
     }
 }

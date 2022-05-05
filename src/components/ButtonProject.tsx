@@ -10,17 +10,20 @@ interface ButtonProjectProps {
 
 
 function ButtonProject(props: ButtonProjectProps) {
+    const { icon, link, text } = props;
     return (
-        <button className="btn-project">
-            <div className="btn-icon">
-                {props.icon}
-            </div>
-            <div className="btn-text">
-                <p>
-                    {props.text}
-                </p>
-            </div>
-        </button>
+        <a href={link}>
+            <button className="btn-project">
+                <div className="btn-icon">
+                    {icon}
+                </div>
+                <div className="btn-text">
+                    <p>
+                        {text}
+                    </p>
+                </div>
+            </button>
+        </a>
     );
 }
 

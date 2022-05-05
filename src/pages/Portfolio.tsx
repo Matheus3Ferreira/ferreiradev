@@ -1,34 +1,82 @@
 import "../style/portfolio.scss";
-import projectImg from "../assets/imgs/project.png"
-import ButtonProject from "../components/ButtonProject";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faArrowRightToBracket} from "@fortawesome/free-solid-svg-icons";
-
+import projectImg1 from "../assets/imgs/projects/1.png"
+import projectImg2 from "../assets/imgs/projects/2.png"
+import projectImg3 from "../assets/imgs/projects/3.png"
+import Project from "../components/Project";
+import {useState} from "react";
 
 
 function Portfolio() {
+
+    const portfolioProjects = [
+        {
+            title: "Ferreira.dev",
+            description: "My first responsive website that show my portfolio and a email sender.",
+            techniques: [
+                "Typescript",
+                "React",
+                "Sass"
+            ],
+            gitHub: "https://github.com/Matheus3Ferreira/ferreiradev",
+            linkView: "#",
+            image: projectImg1
+        },
+        {
+            title: "Hotel Red Light Backend",
+            description: "An API to provide microservices to a frontend and desktop applications of a hotel like CRUDs of clients, authentication, filters, and disponibility of reservations rooms.",
+            techniques: [
+                "NodeJS",
+                "Typescript",
+                "Express",
+                "JSON web Token",
+                "TypeORM",
+                "PostgreSQL",
+                "Cloud Application"
+            ],
+            gitHub: "https://github.com/Matheus3Ferreira/Hotel-RedLight-Backend",
+            linkView: "#",
+            image: projectImg2
+        },
+        {
+            title: "NLW Valoriza",
+            description: "An API to help employers that want to praise or comment your teammates' work.",
+            techniques: [
+                "NodeJS",
+                "Typescript",
+                "Express",
+                "JSON web Token"
+            ],
+            gitHub: "https://github.com/Matheus3Ferreira/NLW-Valoriza",
+            linkView: "#",
+            image: projectImg3
+        },
+    ];
+    
+    const [selectProject, setSelectedProject] = useState(0);
+
     return (
         <div>
-
             <h1 className="title-portfolio">These are my projects</h1>
-        <div className="portfolio-container">
-            <div className="selected-project">
-                <img src={projectImg} alt="project screenshot" />
-                <h2>Project's title</h2>
-                <p>Developed with: Typescript, React, Bootstrap, Sass</p>
-                <p>Este é o meu primeiro site pessoal, feito para tudo.</p>
-                <div className="buttons-project-container">
-                    <ButtonProject text="View" icon={<FontAwesomeIcon icon={faArrowRightToBracket} size={"2x"}/>} link="#"/>
-                    <ButtonProject text="Code" icon={<FontAwesomeIcon icon={faGithub} size={"2x"}/>} link="#" />
+            <div className="portfolio-container">
+                <Project selectedProject={portfolioProjects[selectProject]}/>
+                <div className="project-list">
+                    <button className="btn-project">
+                        <img src={projectImg1} alt="" className={selectProject === 0 ? "btn-project selected" : "btn-project"} onClick={() => {
+                        setSelectedProject(0);                        
+                    }} />
+                    </button>
+                    <button className="btn-project">
+                        <img src={projectImg2} alt="" className={selectProject === 1 ? "btn-project selected" : "btn-project"} onClick={() => {
+                        setSelectedProject(1);                        
+                    }} />
+                    </button>
+                    <button className="btn-project">
+                        <img src={projectImg3} alt="" className={selectProject === 2 ? "btn-project selected" : "btn-project"} onClick={() => {
+                        setSelectedProject(2);                        
+                    }}/>
+                    </button>
                 </div>
             </div>
-            <div className="project-list">
-                <img src={projectImg} alt="" />
-                <img src={projectImg} alt="" />
-                <img src={projectImg} alt="" />
-            </div>
-        </div>
         </div>
     )
 }
