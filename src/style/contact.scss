@@ -1,19 +1,30 @@
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
     .contact-information {
-        width: 450px;
+        min-width: 450px;
+        height: 420px;
         background: #4444DC;
         border-radius: 40px 40px 40px 0;
         padding: 30px 35px;
         display: flex;
         flex-direction: column;
+        margin-right: 80px;
+        @media screen and (max-width: 900px) {
+            min-width: auto;
+            height: auto;
+            width: 100%;
+            margin-bottom: 40px;
+        }
         > h1 {
             margin-bottom: 15px;
         }
         .information {
             display: flex;
             margin-bottom: 20px;
+            word-break:break-all;
             a {
                 margin-right: 30px;
             }

@@ -7,6 +7,7 @@ import { faLinkedin, faFacebookSquare } from "@fortawesome/free-brands-svg-icons
 function Contact() {
     return (
         <div className="contact-container">
+           
             <div className="contact-information">
                 <h1>Contact Information</h1>
                 <div className="information">
@@ -33,10 +34,8 @@ function Contact() {
                 </div>
 
             </div>
-            <div className="contact-forms">
-                <h1>Or send me an email</h1>
-                <Form />
-            </div>
+
+            <Form />
         </div>
     );
 }

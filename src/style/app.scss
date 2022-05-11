@@ -20,7 +20,10 @@ body {
 }
 
 .App {
-    padding: 0 60px;
+    padding: 0 60px 60px 60px;
+    @media screen and (max-width: 900px) {
+        
+    }
 }
 
 p {

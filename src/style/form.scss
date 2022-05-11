@@ -1,17 +1,46 @@
-form {
+.form-container {
     width: 100%;
-    .form-row {
-        display: flex;
-    
-        input, textarea {
-            color: #000;
-            padding: 15px 20px;
-            border-radius: 10px;
-            border: none;
-            outline: none;
+    > h1 {
+        margin-bottom: 40px;
+    }
+    form {
+        width: 100%;
+        .form-row {
+            display: flex;
+            margin-bottom: 40px;
+            @media screen and (max-width: 900px) {
+               flex-direction: column;
+               margin-bottom: 0px;
+            }
+            input, textarea {
+                color: #000;
+                padding: 15px 20px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                width: 100%;
+                @media screen and (max-width: 900px) {
+                    margin-bottom: 40px;
+                 }
+            }
+            textarea {
+                height: 130px;
+            }
         }
-        > button {
+        .form-row input:first-of-type {
+            margin-right: 30px;
+        }
+        
+        button {
             background: #4444DC;
+            width: 220px;
+            height: 70px;
+            border: none;
+            border-radius: 15px;
+            font-size: 24px;
+            @media screen and (max-width: 900px) {
+                margin-bottom: 40px;
+            }
         }
     }
 }
