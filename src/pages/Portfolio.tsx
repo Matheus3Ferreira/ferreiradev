@@ -18,7 +18,7 @@ function Portfolio() {
                 "Sass"
             ],
             gitHub: "https://github.com/Matheus3Ferreira/ferreiradev",
-            linkView: "#",
+            linkView: "https://ferreiradev.netlify.app/",
             image: projectImg1
         },
         {
@@ -34,7 +34,7 @@ function Portfolio() {
                 "Cloud Application"
             ],
             gitHub: "https://github.com/Matheus3Ferreira/Hotel-RedLight-Backend",
-            linkView: "#",
+            linkView: "https://backend-tarefa-teteu.herokuapp.com/",
             image: projectImg2
         },
         {
@@ -47,7 +47,6 @@ function Portfolio() {
                 "JSON web Token"
             ],
             gitHub: "https://github.com/Matheus3Ferreira/NLW-Valoriza",
-            linkView: "#",
             image: projectImg3
         },
     ];
