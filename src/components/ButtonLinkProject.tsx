@@ -11,7 +11,6 @@ interface ButtonLinkProjectProps {
 
 function ButtonLinkProject(props: ButtonLinkProjectProps) {
     const { icon, link, text } = props;
-    const disableLink = "#";
     return (
         <div>
             {
